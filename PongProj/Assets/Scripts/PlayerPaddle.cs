@@ -11,7 +11,7 @@ public class PlayerPaddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        var z = Input.GetAxis("Vertical") * /*Time.deltaTime */ 10.0f;
-        transform.Translate(Vector3.up *Time.deltaTime);
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * 10.0f;
+        transform.Translate(0,0,z);
 	}
 }
