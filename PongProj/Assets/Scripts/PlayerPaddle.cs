@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerPaddle : MonoBehaviour {
-    
-	// Use this for initialization
+
+    [SerializeField]
+    private float paddleSpeed;
+
+    // Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * 10.0f;
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * paddleSpeed;
         transform.Translate(0,0,z);
 	}
 }
