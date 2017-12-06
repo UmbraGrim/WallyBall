@@ -6,11 +6,11 @@ public class Ball : MonoBehaviour {
 
     //SerializeField variables, private so only accessable by this class. Serialize field allows them to be modified in inspector
     [SerializeField]
-    private float ballSpeed = 10f;// = 10.0f;
+    private float ballSpeed = 10f; //use for starting and minimum speed
     [SerializeField]
-    private float speedIncrease;
+    private float speedIncrease; //use for changing ball speed
     [SerializeField]
-    private float maxSpeed;
+    private float maxSpeed; //maximum speed ball can go
 
 
     // Use this for initialization
